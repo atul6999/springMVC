@@ -1,0 +1,5 @@
+com\atul\controller\MinutesController.class
+com\atul\model\Exercise.class
+com\atul\controller\HelloWorldController.class
+com\atul\model\Goal.class
+com\atul\controller\GoalController.class
