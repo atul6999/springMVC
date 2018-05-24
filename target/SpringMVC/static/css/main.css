@@ -1,0 +1,11 @@
+@charset "ISO-8859-1";
+.error{
+	color:red
+}
+.errorBlock{
+	color: white;
+	background: red;
+	border: 3px solid red;
+	margin: 3px;
+	padding: 8px
+}
