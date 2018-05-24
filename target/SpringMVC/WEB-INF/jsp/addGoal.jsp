@@ -12,10 +12,11 @@
 	color:red
 }
 .errorBlock{
-	color: white
-	background-color: red
+	color: white;
+	background: red;
 	border: 3px solid red;
-	margin: 3px
+	margin: 3px;
+	padding: 8px
 }
 </style>
 </head>
@@ -27,7 +28,7 @@ Language: <a href="?language=en">English</a> | <a href="?language=hn">Hindi</a>
 		<tr>
 			<td><spring:message code="goal.enterText"/></td>
 			<td><form:input path="minutes" cssErrorClass="error"/></td>
-			<form:errors cssClass="error" path="minutes"/>
+			<td><form:errors cssClass="error" path="minutes"/></td>
 		</tr>
 		<tr>
 			<spring:message code="goal.enterButtonText" var="buttonValue"/>

@@ -1,5 +1,8 @@
 com\atul\controller\MinutesController.class
 com\atul\model\Exercise.class
+com\atul\model\Activity.class
 com\atul\controller\HelloWorldController.class
+com\atul\dao\ExerciseService.class
 com\atul\model\Goal.class
+com\atul\service\ExerciseServiceImpl.class
 com\atul\controller\GoalController.class

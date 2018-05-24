@@ -13,6 +13,6 @@
 <br/>
 <a href="addMoreMinutes.html">Add More Minutes Page</a>
 <br/>
-<a href="addGoal.html">Add Goal Page</a>
+<a href="cristal.html">Cristal Page</a>
 </body>
 </html>

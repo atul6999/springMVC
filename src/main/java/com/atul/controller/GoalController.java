@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.atul.model.Exercise;
 import com.atul.model.Goal;
 
 
@@ -32,4 +33,5 @@ public class GoalController {
 			return new ModelAndView("redirect:addMinutes","goal", goal);	
 		}
 	}
+	
 }
