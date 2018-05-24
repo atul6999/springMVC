@@ -2,7 +2,7 @@ package com.atul.model;
 
 public class Exercise {
 	private int minutes;
-	private Activity activity;
+	private String activity;
 	
 	public int getMinutes() {
 		return minutes;
@@ -12,11 +12,11 @@ public class Exercise {
 		this.minutes = minutes;
 	}
 
-	public Activity getActivity() {
+	public String getActivity() {
 		return activity;
 	}
 
-	public void setActivity(Activity activity) {
+	public void setActivity(String activity) {
 		this.activity = activity;
 	}
 	

@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.atul.dao.ExerciseService;
@@ -43,12 +44,12 @@ public class MinutesController {
 	}
 	
 	@RequestMapping(value="/activities", method = RequestMethod.GET)
-	public List<Activity> findAllActivities(@ModelAttribute("exercise") Exercise exercise) {
+	public @ResponseBody List<Activity> findAllActivities(@ModelAttribute("exercise") Exercise exercise) {
 //		System.out.println("Exercising more :  "+ exercise.getMinutes());
 //		System.out.println("Exercising more :  "+ exercise.getActivity());
 		return exerciseService.findAllActivities();
 	}
-	@RequestMapping(value="/cristal", method = RequestMethod.GET)
+	@RequestMapping(value="/cristal")
 	public ModelAndView displayCristal(@Valid @ModelAttribute("exercise") Exercise exercise) {
 		System.out.println("Exercising more :  "+ exercise.getMinutes());
 		return new ModelAndView("cristal");
